@@ -1,6 +1,7 @@
 module Types
-  class MutationType < Types::BaseObject
+  class MutationType < BaseObject
     # TODO: remove me
     field :create_link, mutation: Mutations::CreateLink
+    field :create_user, mutation: Mutations::CreateUser
   end
 end
