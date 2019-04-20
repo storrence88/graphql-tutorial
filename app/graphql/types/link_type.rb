@@ -7,6 +7,6 @@ module Types
     # field can be nil, because we added users relationship later
     # "method" option remaps field to an attribute of Link model
     field :posted_by, UserType, null: false, method: :user
-    field :votes, [Type::VoteTypes], false: true
+    field :votes, [Types::VoteType], null: false
   end
 end
